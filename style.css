@@ -1,0 +1,155 @@
+:root {
+    --primary: #c81e5e;     /* Vibrant Rose Pink */
+    --secondary: #f8c4d8;   /* Soft Blush Pink */
+    --accent: #f4c95d;      /* Rich Gold */
+    --dark: #1f1f1f;
+    --light: #fdf7f9;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: var(--light);
+}
+
+/* Navbar - More Elegant */
+.navbar {
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a) !important;
+    box-shadow: 0 5px 20px rgba(200, 30, 94, 0.25);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    color: var(--accent) !important;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+    background: rgba(248, 196, 216, 0.15);
+    border-radius: 30px;
+}
+
+/* Hero - Much More Attractive */
+.hero {
+    height: 100vh;
+    min-height: 680px;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(200, 30, 94, 0.35)), 
+                url('https://images.squarespace-cdn.com/content/v1/59c58890a803bbff9d192314/1708465588023-C1FH304XC1XSSM2YKGVQ/Untitled+design+%2813%29.png?format=2500w') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4.2rem;
+    font-weight: 900;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    padding: 16px 38px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(200, 30, 94, 0.3);
+    transition: all 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: #a0184d;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(200, 30, 94, 0.4);
+}
+
+/* Section Titles */
+.section-title {
+    color: var(--primary);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, var(--accent), var(--primary));
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(200, 30, 94, 0.12);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(200, 30, 94, 0.25);
+}
+
+/* Gallery & Team Images */
+.gallery-img, .team-img {
+    transition: transform 0.6s ease;
+}
+
+.gallery-img:hover, .team-img:hover {
+    transform: scale(1.12);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+    color: white;
+    padding: 80px 0 40px;
+}
+
+.footer h5 {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Form Enhancement */
+.booking-form {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(200, 30, 94, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
